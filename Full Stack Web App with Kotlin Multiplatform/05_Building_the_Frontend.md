@@ -64,7 +64,8 @@ import react.create
 
 fun main() {
     val container = document.getElementById("root") ?: error("Couldn't find container!")
-    render(App.create(), container)
+    val root = createRoot(container)
+    root.render(App.create())
 }
 ```
 
